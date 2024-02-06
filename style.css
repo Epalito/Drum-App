@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(./Images/drum.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    margin: 80px 0px;
+    text-align: center;
+    font-size: 22px;
+    color: beige;
+}
+
+header p {
+    padding-top: 18px;
+}
+
+.drumTouches {
+    display: flex;
+    justify-content: center;
+}
+
+.keyboard {
+    padding: 30px;
+}
+
+.kick, .snare, .hithat, .hightom, .midtom, .floortom, .crash, .ride {
+    min-width: 130px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.kickBtn, .snareBtn, .hithatBtn, .hightomBtn, .midtomBtn, .floortomBtn, .crashBtn, .rideBtn {
+    min-width: max-content;
+    padding: 15px;
+    border: 0.1px solid rgba(105, 86, 86, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    background: rgb(85, 61, 46);
+    color: rgb(233, 181, 9);
+    font-size: 25px;
+}
+
+.kickBtn:hover, .snareBtn:hover, .hithatBtn:hover, .hightomBtn:hover, .midtomBtn:hover, .floortomBtn:hover, .crashBtn:hover, .rideBtn:hover {
+    background: rgb(122, 93, 69);
+}
+
+.nameDrum {
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+/* Mettre la meme taille de bouton */
